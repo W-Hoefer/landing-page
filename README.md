@@ -30,4 +30,4 @@ from Masterschool instructors and fellow students :)
 
 ### Known bugs
 
-Active Link not marked by color
+none

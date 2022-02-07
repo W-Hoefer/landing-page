@@ -1,5 +1,6 @@
 // Global variables
-const [sections, navList] = [document.querySelectorAll('[data-nav]'), document.querySelector('#navbar__list')];
+const sections = document.querySelectorAll('[data-nav]');
+const navList = document.querySelector('#navbar__list');
 
 // build nav menu
 function buildNav() {
@@ -19,8 +20,14 @@ function buildNav() {
 function setActive() {
   sections.forEach((section) => {
     const rect = section.getBoundingClientRect();
-    (rect.top <= 350 && rect.bottom >= 150) ? section.classList.add("your-active-class")
-    : section.classList.remove("your-active-class");
+    const activeLink = navList.querySelector(`[data-nav=${section.id}]`);
+    if (rect.top <= 150 && rect.bottom >= 150) {
+      section.classList.add("your-active-class");
+      activeLink.classList.add('active-link');
+    } else {
+      section.classList.remove("your-active-class");
+      activeLink.classList.remove('active-link');
+    }
   });
 }
 
