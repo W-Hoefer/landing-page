@@ -67,7 +67,8 @@ section {
 .navbar__menu ul {
     padding-left: 0;
     margin: 0;
-    text-align: right;
+    text-align: left;
+    background: #333;
 }
 
 .navbar__menu li {
@@ -79,13 +80,18 @@ section {
     padding: 1em;
     font-weight: bold;
     text-decoration: none;
-    color: #000;
+    color: rgb(96, 196, 118);
 }
 
 .navbar__menu .menu__link:hover {
-    background: #333;
-    color: #fff;
+    background: #fff;
+    color: rgb(96, 196, 118);
     transition: ease 0.3s all;
+}
+
+.navbar__menu .menu__link:active {
+    background: #fff;
+    color: rgb(96, 196, 118);
 }
 
 /* Header Styles */
