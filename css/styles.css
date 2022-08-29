@@ -110,6 +110,10 @@ section {
     color: #fff;
 }
 
+.footer_box {
+    display: flex;
+    flex-wrap: nowrap;
+}
 
 /* ---- Theme Rules ---- */
 /* Landing Container Styles */
