@@ -31,6 +31,10 @@ function setActive() {
   });
 }
 
+function send() {
+  alert("Subscription successful!");
+}
+
 // scroll to section on click
 function scroll (e) {
   e.preventDefault();
