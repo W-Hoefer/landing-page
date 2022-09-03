@@ -70,15 +70,13 @@
   <footer class="page__footer">
     <div class="footer_box">
       
-        <form action="" onsubmit="alert('Subscription successful!');">
-          <label for="fname">Full Name:</label>
-          <input type="text" id="name" name="name" placeholder="Your name here...">
-          &nbsp;&nbsp;&nbsp;
-          <label for="mail">E-Mail:</label>
-          <input type="text" id="mail" name="mail" placeholder="Your e-mail here...">
-          &nbsp;&nbsp;&nbsp;
-          <input type="submit" value="Subscribe!">
-        </form>
+      <form onsubmit="send()">
+        <input type="text" name="nameField" placeholder="Your name here..." required>
+        &nbsp;&nbsp;&nbsp;
+        <input type="email" name="emailField" placeholder="Your e-mail here..." required>
+        &nbsp;&nbsp;&nbsp;
+        <input type="submit" value="Subscribe!">
+      </form>
 
       </p>
     </div>
