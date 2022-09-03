@@ -8,6 +8,7 @@
 This project is about creating an interactive web page with focus on    
 having classes set to active when inside the viewport. The nav menu    
 is also done by Javascript.
+Added subscription functionality (03.09.2022).
 
 ### Requirements
 
